@@ -1,8 +1,13 @@
 <template>
   <div>
+    
     <van-grid :column-num="5">
-      <van-grid-item v-for="(item,idx) in meituan" :key="idx" :icon="item.icon" :text="item.name" />
-    </van-grid>
+      
+        <van-grid-item 
+        :to="`/detail/${idx}/yujian`"
+        v-for="(item,idx) in meituan" :key="idx" :icon="item.icon" :text="item.name" />
+       </van-grid>
+      
   </div>
 </template>
 
@@ -15,7 +20,8 @@ export default {
   },
 
   methods: {
-    onSearch() {}
+    onSearch() {},
+    
   },
 
   computed: {

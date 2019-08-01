@@ -110,7 +110,7 @@ export default {
       "https://www.easy-mock.com/mock/5d400b1f2c0fb9351245b95b/example/meituanlist"
     );
     this.shopList = data.data.data.shopList;
-    console.log(data);
+    // console.log(data);
   }
 };
 </script>

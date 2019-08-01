@@ -1,20 +1,23 @@
 <template>
   <div id="app">
     <!-- <Home /> -->
-    <Qwe />
+    <router-view />
+    
   </div>
 </template>
 
 <script>
 
 // import Home from './views/Home';
-import Qwe from './views/Qwe';
+// import Qwe from './views/Qwe';
+
+// import './assets/toutiao.css';
 
 export default {
   name: 'app',
   components: {
     // Home
-    Qwe
+    // Qwe
   }
 }
 </script>

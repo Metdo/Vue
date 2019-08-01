@@ -11,8 +11,14 @@ import VantIndex from './vantIndex';
  
 VantIndex()
 
+// 引入路由
+import router from './routers';
+
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  
+  // 把router实例注入到vue实例中
+  router,
 }).$mount('#app')
